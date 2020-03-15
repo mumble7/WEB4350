@@ -1,12 +1,71 @@
 <template>
+  <!-- NAVIGATION -->
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <router-link class="nav-link" to="/">MoneyApp</router-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto"></ul>
+          <span class>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <router-link class="nav-link" to="/expenditures">Expenditures</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/transactions">Transactions</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/analytics">Analytics</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/contact">Contact</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/signin">Sign In</router-link>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <router-link class="nav-link" to="/signup">Sign Up</router-link>
+                </button>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </nav>
+      <!-- FOOTER -->
+      <!-- I'm running into some sticky issues with the footer -->
+      <!-- <div class="footBar">
+        <nav class="navbar fixed-bottom navbar-light bg-light footerFixed">
+          <a class="navbar-brand" href="#">Fixed bottom</a>
+          <div>
+            <ul class>
+              <li class>Brooklyn Child</li>
+              <li class>Skyler Wilden</li>
+              <li class>Jordan Yazzie</li>
+              <li class>Brenden Morris</li>
+              <li class>Matthew K. Young</li>
+            </ul>
+          </div>
+        </nav>
+      </div>-->
+
+      <!-- END CONTENT -->
     </div>
     <router-view />
   </div>
 </template>
+
 
 <style lang="scss">
 #app {
@@ -17,16 +76,11 @@
   color: #2c3e50;
 }
 
-#nav {
+main {
+  margin: 0 auto;
   padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  background-color: white;
+  width: 1024px;
+  min-height: 300px;
 }
 </style>
