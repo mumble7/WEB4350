@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <HomePage />
     <!-- CONTENT BEGIN -->
     <!-- CONTACT FORM -->
     <div class="container">
@@ -8,7 +7,11 @@
         <h1>Contact Us</h1>
         <div class="form-group">
           <label for="exampleInputPassword1">Name</label>
-          <input class="form-control" type="text" placeholder="Name...Nickname...Username..." />
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Name...Nickname...Username..."
+          />
         </div>
         <div class="form-group">
           <label for="contactEmail">Email address</label>
@@ -19,10 +22,9 @@
             aria-describedby="emailHelp"
             placeholder="Enter email"
           />
-          <small
-            id="emailHelp"
-            class="form-text text-muted"
-          >We'll never share your email with anyone else.</small>
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
         </div>
         <div class="form-group">
           <textarea

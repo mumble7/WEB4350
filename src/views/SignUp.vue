@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <HomePage />
     <!-- CONTENT BEGIN -->
     <!-- CONTACT FORM -->
     <div class="container">

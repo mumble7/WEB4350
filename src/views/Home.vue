@@ -23,20 +23,32 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">All in 1 Finance</h5>
-            <img class="card-img-top" src="../assets/Handphone.png" alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="../assets/Handphone.png"
+              alt="Card image cap"
+            />
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Budgets Made Simple</h5>
-            <img class="card-img-top" src="../assets/Handphone.png" alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="../assets/Handphone.png"
+              alt="Card image cap"
+            />
           </div>
         </div>
 
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">100% Visability</h5>
-            <img class="card-img-top" src="../assets/Handphone.png" alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="../assets/Handphone.png"
+              alt="Card image cap"
+            />
           </div>
         </div>
       </div>
@@ -48,8 +60,8 @@
       <div class>
         <h2>It's All Coming Together</h2>
         <p>
-          We bring ogether all of your accounts, bills and more, so you can conveniently
-          manage your finances from one dashboard.
+          We bring ogether all of your accounts, bills and more, so you can
+          conveniently manage your finances from one dashboard.
         </p>
         <button>Sign up for free!</button>
       </div>
@@ -59,8 +71,6 @@
   </div>
 </template>
 
-
-
 <script>
 // @ is an alias to /src
 import HomePage from "@/components/HomePage.vue";
@@ -68,8 +78,8 @@ import HomePage from "@/components/HomePage.vue";
 export default {
   name: "Home",
   components: {
-    HomePage
-  }
+    HomePage,
+  },
 };
 </script>
 

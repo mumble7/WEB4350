@@ -31,14 +31,20 @@
               <li class="nav-item">
                 <router-link class="nav-link" to="/contact">Contact</router-link>
               </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/signin">Sign In</router-link>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <router-link class="nav-link" to="/signup">Sign Up</router-link>
-                </button>
-              </li>
+              <div v-if="currentUser.name">
+                {{ currentUser.name }}
+                <button @click="logoutUser">Logout</button>
+              </div>
+              <div v-else>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/signin">Sign In</router-link>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-light">
+                    <router-link class="nav-link" to="/signup">Sign Up</router-link>
+                  </button>
+                </li>
+              </div>
             </ul>
           </span>
         </div>
@@ -65,7 +71,23 @@
     <router-view />
   </div>
 </template>
-
+<script>
+import { mapState } from "vuex";
+export default {
+  name: "App",
+  mounted() {},
+  components: {},
+  computed: {
+    ...mapState(["currentUser"])
+  },
+  data: () => ({}),
+  methods: {
+    logoutUser() {
+      this.$store.dispatch("logoutUser");
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
