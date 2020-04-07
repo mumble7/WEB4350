@@ -2,7 +2,10 @@
   <div class="home">
     <!-- CONTENT BEGIN -->
     <!-- CONTACT FORM -->
-    <div class="container"><UserAuthForm :submitForm="loginUser" /></div>
+    <div class="container">
+      <h1>Login</h1>
+      <UserAuthForm :submitForm="loginUser" buttonText="Login" />
+    </div>
     <!-- CONTENT END -->
   </div>
 </template>

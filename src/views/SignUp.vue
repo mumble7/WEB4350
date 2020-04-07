@@ -1,49 +1,24 @@
 <template>
-  <div class="home">
-    <!-- CONTENT BEGIN -->
-    <!-- CONTACT FORM -->
-    <div class="container">
-      <form>
-        <h1>Sign In</h1>
-        <div class="form-group">
-          <label for="exampleInputPassword1">First Name</label>
-          <input class="form-control" type="text" placeholder="First Name" />
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Last Name</label>
-          <input class="form-control" type="text" placeholder=" Last Name" />
-        </div>
-        <div class="form-group">
-          <label for="contactEmail">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Confirm Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            placeholder="Confirm Password"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-    <!-- CONTENT END -->
+  <div class="container">
+    <h1>Sign Up</h1>
+    <UserAuthForm submitForm="registerUser" buttonText="Apply" hasName="true" />
   </div>
 </template>
+<script>
+import UserAuthForm from "@/components/UserAuthForm.vue";
+export default {
+  components: {
+    UserAuthForm,
+  },
+  methods: {
+    async registerUser(registrationInfo) {
+      let user = await this.$store.dispatch("registerUser", registrationInfo);
+      if (user.error) {
+        alert(user.error);
+      } else {
+        alert("You are registered!, " + user.name);
+      }
+    },
+  },
+};
+</script>

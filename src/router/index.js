@@ -7,8 +7,16 @@ import Analytics from "../views/Analytics.vue";
 import Contact from "../views/Contact.vue";
 import Expenditures from "../views/Expenditures.vue";
 import Transactions from "../views/Transactions.vue";
-import SignIn from "../views/SignIn.vue";
-import SignUp from "../views/SignUp.vue";
+import Login from "../views/SignIn.vue";
+import Register from "../views/SignUp.vue";
+import MemberDashboard from "../views/MemberDashboard.vue";
+import Member from "../views/Member.vue";
+import MemberTransactions from "../views/MemberTransactions.vue";
+import MemberDeposit from "../views/MemberDeposit.vue";
+import MemberWithdrawl from "../views/MemberWithdrawl.vue";
+import MemberExpenditures from "../views/MemberExpenditures.vue";
+import MemberAnalytics from "../views/MemberAnalytics.vue";
+import MemberProfile from "../views/MemberProfile.vue";
 
 Vue.use(VueRouter);
 
@@ -53,13 +61,71 @@ const routes = [
   },
   {
     path: "/SignIn",
-    name: "SignIn",
-    component: SignIn,
+    name: "Login",
+    component: Login,
   },
   {
     path: "/SignUp",
-    name: "SignUp",
-    component: SignUp,
+    name: "Register",
+    component: Register,
+  },
+  //
+  // Router Guarded Pages
+  // Will move all of these paths inside of the child underneath /member
+  //
+  { path: "/dashboard", name: "Dashboard", component: MemberDashboard },
+  {
+    path: "/MemberTransactions",
+    name: "MemberTransactions",
+    component: MemberTransactions,
+  },
+  {
+    path: "/MemberDeposit",
+    name: "MemberDeposit",
+    component: MemberDeposit,
+  },
+  {
+    path: "/MemberWithdrawl",
+    name: "MemberWithdrawl",
+    component: MemberWithdrawl,
+  },
+  {
+    path: "/MemberExpenditures",
+    name: "MemberExpenditures",
+    component: MemberExpenditures,
+  },
+  {
+    path: "/MemberAnalytics",
+    name: "MemberAnalytics",
+    component: MemberAnalytics,
+  },
+  {
+    path: "/MemberProfile",
+    name: "MemberProfile",
+    component: MemberProfile,
+  },
+  // Router Guarded Pages inside member children
+  {
+    path: "/member",
+    name: "member",
+    component: Member,
+    //THIS IS AUTHENTICATION - ONCE IN PLACE YOU NEED TO LOGIN TO ACCESS ALL Child Pages
+    // beforeEnter(to, from, next) {
+    //   let currentUser = JSON.parse(window.localStoraged.currentUser);
+    //   if (currentUser && currentUser.name) {
+    //     next();
+    //   } else {
+    //     next("/");
+    //   }
+    // },
+    // children: [
+    //   { path: "dashboard", name: "Dashboard", component: MemberDashboard },
+    //   {
+    //     path: "MemberTransactions",
+    //     name: "MemberTransactions",
+    //     component: MemberTransactions,
+    //   }, //The rest of my protected routes will go here
+    // ],
   },
 ];
 

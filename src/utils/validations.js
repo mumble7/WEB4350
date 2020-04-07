@@ -11,7 +11,7 @@ let maxLength = (propertyType, maxLength) => {
     (v && v.length <= maxLength) ||
     `${propertyType} must be less than ${maxLength} characters`;
 };
-
+//Valid Email
 let emailFormat = () => {
   let regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,24})+$/;
   return (v) => (v && regex.test(v)) || "Must be a valid email";

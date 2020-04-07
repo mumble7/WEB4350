@@ -1,6 +1,27 @@
 <template>
   <form>
-    <h1>Sign In</h1>
+    <div class="form-group" v-if="hasName">
+      <label for="fName">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="fName"
+        placeholder="John"
+        v-model="userInfo.fName"
+        :rules="[required('fname')]"
+      />
+    </div>
+    <div class="form-group" v-if="hasName">
+      <label for="lName">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lName"
+        placeholder="Wick"
+        v-model="userInfo.lName"
+        :rules="[required('lname')]"
+      />
+    </div>
 
     <div class="form-group">
       <label for="contactEmail">Email address</label>
@@ -10,7 +31,7 @@
         id="useremail"
         aria-describedby="emailHelp"
         placeholder="Enter email"
-        v-model="loginInfo.email"
+        v-model="userInfo.email"
         :rules="[required('email'), emailFormat()]"
       />
     </div>
@@ -20,7 +41,7 @@
         class="form-control"
         id="password"
         placeholder="Password"
-        v-model="loginInfo.password"
+        v-model="userInfo.password"
         :type="showPassword ? 'text' : 'password'"
         @click:append="showPassword = !showPassword"
         counter="true"
@@ -30,10 +51,10 @@
     <button
       type="submit"
       class="btn btn-primary"
-      @click="submitForm(loginInfo)"
+      @click="submitForm(userInfo)"
       :disabled="!valid"
     >
-      Login
+      {{ buttonText }}
     </button>
   </form>
 </template>
@@ -46,7 +67,9 @@ export default {
     return {
       valid: false,
       showPassword: false,
-      loginInfo: {
+      userInfo: {
+        fname: "",
+        lname: "",
         email: "",
         password: "",
       },
