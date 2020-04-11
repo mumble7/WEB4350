@@ -1,4 +1,7 @@
 <template>
+  <!-- 
+  I was planning on running just v-if/v-else to display the 2 navs depending on if they're logged in what will display in the header.
+ -->
   <!-- NAVIGATION -->
   <div id="app">
     <div id="nav">
@@ -62,17 +65,19 @@
         </div>
       </nav>
       <!-- FOOTER -->
-      <!-- I'm running into some sticky issues with the footer -->
+      <!-- 
+        I'm running into some sticky issues with the footer 
+        -->
       <!-- <div class="footBar">
         <nav class="navbar fixed-bottom navbar-light bg-light footerFixed">
           <a class="navbar-brand" href="#">Fixed bottom</a>
           <div>
-            <ul class>
-              <li class>Brooklyn Child</li>
-              <li class>Skyler Wilden</li>
-              <li class>Jordan Yazzie</li>
-              <li class>Brenden Morris</li>
-              <li class>Matthew K. Young</li>
+            <ul class="">
+              <li class="">Brooklyn Child</li>
+              <li class="">Skyler Wilden</li>
+              <li class="">Jordan Yazzie</li>
+              <li class="">Brenden Morris</li>
+              <li class="">Matthew K. Young</li>
             </ul>
           </div>
         </nav>
@@ -92,14 +97,14 @@ export default {
   },
   components: {},
   computed: {
-    ...mapState(["currentUser"]),
+    ...mapState(["currentUser"])
   },
   data: () => ({}),
   methods: {
     logoutUser() {
       this.$store.dispatch("logoutUser");
-    },
-  },
+    }
+  }
 };
 </script>
 

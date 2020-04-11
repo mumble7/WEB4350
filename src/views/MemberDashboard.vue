@@ -1,5 +1,6 @@
 <template>
-  <p>Dashboard Text</p>
+  <!-- Everthing coming from the template has to live inside a single element such as a div -->
+  <div><p>Dashboard Text</p></div>
 </template>
 <script>
 export default {

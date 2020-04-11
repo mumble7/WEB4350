@@ -1,5 +1,6 @@
 <template>
-  <p>Member Profile</p>
+  <!-- Everthing coming from the template has to live inside a single element such as a div -->
+  <div><p>Member Profile</p></div>
 </template>
 <script>
 export default {
