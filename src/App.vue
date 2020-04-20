@@ -22,42 +22,78 @@
           <ul class="navbar-nav mr-auto"></ul>
           <span class>
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <router-link class="nav-link" to="/expenditures"
-                  >Expenditures</router-link
-                >
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/transactions"
-                  >Transactions</router-link
-                >
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/analytics"
-                  >Analytics</router-link
-                >
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/contact"
-                  >Contact</router-link
-                >
-              </li>
-              <div v-if="currentUser.name">
+              <div v-if="currentUser.name" class="row">
                 {{ currentUser.name }}
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/dashboard"
+                    >Dashboard</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/MemberAnalytics"
+                    >Analytics</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/MemberDeposit"
+                    >Deposits</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/MemberWithdrawl"
+                    >Withdraws</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/MemberTransactions"
+                    >Transactions</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/MemberExpenditures"
+                    >Expenditures</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/dashboard"
+                    >Profile</router-link
+                  >
+                </li>
                 <button @click="logoutUser">Logout</button>
               </div>
-              <div v-else>
+
+              <div v-else class="row">
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/expenditures"
+                    >Expenditures</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/transactions"
+                    >Transactions</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/analytics"
+                    >Analytics</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link" to="/contact"
+                    >Contact</router-link
+                  >
+                </li>
                 <li class="nav-item" to="/signin">
                   <router-link class="nav-link" to="/signin"
                     >Sign In</router-link
                   >
                 </li>
                 <li class="nav-item">
-                  <button type="button" class="btn btn-light">
-                    <router-link class="nav-link" to="/signup"
-                      >Sign Up</router-link
-                    >
-                  </button>
+                  <!-- <button type="button" class="btn btn-light"> -->
+                  <router-link class="nav-link" to="/signup"
+                    >Sign Up</router-link
+                  >
+                  <!-- </button> -->
                 </li>
               </div>
             </ul>
