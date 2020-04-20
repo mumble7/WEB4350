@@ -63,7 +63,11 @@
           We bring ogether all of your accounts, bills and more, so you can
           conveniently manage your finances from one dashboard.
         </p>
-        <button>Sign up for free!</button>
+        <button>
+          <router-link class="nav-link" to="/signup"
+            >Sign Up for Free!</router-link
+          >
+        </button>
       </div>
     </div>
 
