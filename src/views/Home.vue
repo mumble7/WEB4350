@@ -9,7 +9,8 @@
         <div class="row">
           <div class="col-8">
             <h1 class="display-8">It's all coming together</h1>
-            <h5> When you're on top of your money, life is good.</h5>
+            <h3> When you're on top of your money, life is good.</h3>
+            <br>
             <div class="button_cont" align="center"><a class="herobutton" to="/signin" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
           </div>
           <div class="col-4">
@@ -64,9 +65,10 @@
         </div>
         <div class="col">
           <h2>All your money in one place</h2>
-          <p>
-            We bring together all of your accounts, bills and more, so you can conveniently manage your finances from one dashbaord. 
+          <h4>
+            We bring together all of your accounts, bills and more, so you can conveniently manage your finances from one dashbaord. </h4>
          <br>
+         <p>
           > See all of your bills and money at a glance.
           <br>
           > Create budgets easily with tips tailered to you.
@@ -171,7 +173,7 @@ export default {
   max-width: 100%;
 }
 .signUp {
-  background-color: darkblue;
+  background-color: skyblue;
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 100%;
