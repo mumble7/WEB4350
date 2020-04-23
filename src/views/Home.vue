@@ -5,7 +5,7 @@
     <!-- CONTENT -->
 
     <!-- Hero -->
-    <div class="jumbotron jumbotron-fluid hero">
+    <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -25,34 +25,38 @@
       <div class="card-deck">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">All-in-one finances</h5>
-            <p> We bring all of your money into one place. 
             <img
-              class="card-img-top"
+              class="card-img-top info"
               src="../assets/tasks-solid.svg"
               alt="Card image cap"
             />
+            <br>
+            <h5 class="card-title"><strong>All-in-one finances</strong></h5>
+            <br> 
+            
           </div>
         </div>
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Budgets Made Simple</h5>
             <img
-              class="card-img-top"
+              class="card-img-top info"
               src="../assets/hand-holding-usd-solid.svg"
               alt="Card image cap"
             />
+            <br>
+            <h5 class="card-title"><strong>Budgets Made Simple</strong></h5>
           </div>
         </div>
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">100% Visability</h5>
-            <img
-              class="card-img-top"
+             <img
+              class="card-img-top info"
               src="../assets/glasses-solid.svg"
               alt="Card image cap"
             />
+            <br>
+            <h5 class="card-title"><strong>100% Visability</strong></h5>
           </div>
         </div>
       </div>
@@ -66,7 +70,8 @@
         <div class="col">
           <h2>All your money in one place</h2>
           <p>
-            We bring together all of your accounts, bills and more, so you can conveniently manage your finances from one dashbaord. 
+            We bring together all of your accounts, bills and more, so you can conveniently manage your finances from one dashbaord.
+            <br> 
           > See all of your bills and money at a glance.
           <br>
           > Create budgets easily with tips tailered to you.
@@ -185,6 +190,16 @@ export default {
 
 .col{
   padding-top: 15px;
+}
+
+.info{
+  size: 1em;
+  color: darkblue;
+}
+
+h5 .card-title{
+  font-size: 36px;
+  
 }
 
 .site-footer
