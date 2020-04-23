@@ -4,15 +4,16 @@
     <HomePage />
     <!-- CONTENT -->
 
-    <!-- Hero -->
-    <div class="jumbotron jumbotron-fluid hero">
-      <img class="heroImg" src="../assets/piggybank.jpg" alt />
+     <div class="jumbotron jumbotron-fluid hero">
       <div class="container">
         <div class="row">
           <div class="col-4">
             <h1 class="display-4">It's all coming together</h1>
             <p class="display-4"> When you're on top of your money, life is good.</p>
             <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+          </div>
+          <div class="col-8">
+            <img class="heroImg" src="../assets/piggybank.png" alt />
           </div>
         </div>
       </div>
@@ -26,7 +27,7 @@
             <h3 class="card-title">All-in-one finances</h3>
             
             <img
-              class="card-img-top"
+              class="card-img-top award"
               src="../assets/tasks-solid.svg"
               alt="Card image cap"
             />
@@ -36,7 +37,7 @@
           <div class="card-body">
             <h3 class="card-title">Budgets Made Simple</h3>
             <img
-              class="card-img-top"
+              class="card-img-top award"
               src="../assets/hand-holding-usd-solid.svg"
               alt="Card image cap"
             />
@@ -47,7 +48,7 @@
           <div class="card-body">
             <h3 class="card-title">100% Visability</h3>
             <img
-              class="card-img-top"
+              class="card-img-top award">
               src="../assets/glasses-solid.svg"
               alt="Card image cap"
             />
@@ -112,8 +113,7 @@
       </div>
     </div>
 <br>
-<br>
-<br>
+
     <!-- CONTENT END -->
 
      <!--footer-->
@@ -159,8 +159,9 @@ export default {
 
 <style scoped>
 .award {
-  max-width: 5rem;
-  max-height: 5rem;
+  max-width: 7rem;
+  max-height: 7rem;
+  color: lightskyblue;
 }
 .hero {
   background-color: lightblue;
