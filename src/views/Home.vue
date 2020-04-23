@@ -7,12 +7,12 @@
      <div class="jumbotron jumbotron-fluid hero">
       <div class="container">
         <div class="row">
-          <div class="col-4">
-            <h1 class="display-4">It's all coming together</h1>
-            <p class="display-4"> When you're on top of your money, life is good.</p>
+          <div class="col-8">
+            <h1 class="display-8">It's all coming together</h1>
+            <h5> When you're on top of your money, life is good.</h5>
             <div class="button_cont" align="center"><a class="herobutton" to="/signin" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
           </div>
-          <div class="col-8">
+          <div class="col-4">
             <img class="heroImg" src="../assets/piggybank.png" alt />
           </div>
         </div>
@@ -48,7 +48,7 @@
           <div class="card-body">
             <h3 class="card-title">100% Visability</h3>
             <img
-              class="card-img-top award">
+              class="card-img-top award"
               src="../assets/glasses-solid.svg"
               alt="Card image cap"
             />
@@ -82,9 +82,10 @@
       <div class="row">
         <div class="col">
           <h2>Effortlessly stay on top of bills</h2>
-          <p>
-            Bills are now easier than ever to track. Simply add them to your dashboard to see and monitor them all at once. 
+           <h4>
+            Bills are now easier than ever to track. Simply add them to your dashboard to see and monitor them all at once. </h4>
             <br>
+            <p>
             > Receive reminders for upcoming bills so you can plan ahead
             <br>
             > Never miss a payment with alerts when bills are default
@@ -99,10 +100,10 @@
       </div>
     </div>
     <!-- CONTENT END -->
-
+<br>
     <!-- It's ALL COMING TOGETHER -->
     <div class="container signUp">
-      <img class="award" src="../assets/award-solid.svg" alt="award" />
+      <img class="award" src="../assets/award-solid.svg" alt="award" color ="white" />
       <div class>
         <h2>It's All Coming Together</h2>
         <p>
@@ -112,7 +113,7 @@
         <div class="button_cont" align="center"><a class="button" to="/signup" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
       </div>
     </div>
-<br>
+
 
     <!-- CONTENT END -->
 
