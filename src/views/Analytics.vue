@@ -7,7 +7,7 @@
       <div class="container">
         <h1 class="display-4">Want to see where you stand?</h1>
         <br>
-        <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+        <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
       </div>
     </div>
 

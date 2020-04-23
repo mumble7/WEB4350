@@ -7,8 +7,7 @@
         <div class="row">
           <div class="col-4">
             <h1 class="display-4">What is BluBoard, and how does it work?</h1>
-            <p class="display-4"> When you're on top of your money, life is good. We help you effortlessly manage your finances in one place. The more accounts you link, the more we can do for you.</p>
-            <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank">Sign up for free</a></div> 
+            <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank">Sign up for free</a></div> 
           </div>
         </div>
       </div>
@@ -22,9 +21,9 @@
         </div>
         <div class="col">
           <h2>See everything in one place</h2>
-          <p>
+          <h4>
             We bring together everything from balances and bills to categoires and more. It's your financial life, in one place that's easy to understand. 
-           
+           </h4>
         </div>
       </div>
     </div>
@@ -34,9 +33,9 @@
       <div class="row">
         <div class="col">
           <h2>Simple and free to set up</h2>
-          <p>
+          <h4>
             It's free and easy to get started! In just minutes, you'll see where your money is going and get ideas on how to stretch it farther.
-          </p>
+          </h4>
         </div>
         <div class="col">
           <img class="heroImg" src="../assets/bills.jpg" alt />
@@ -52,9 +51,9 @@
         </div>
         <div class="col">
           <h2>Stay up-to-date as it happens</h2>
-          <p>
+          <h4>
             BluBoard automatically updates and categorizes your information. From back accounts to credit cards - we'll crunch the numbers as they happen so you know where you stand. 
-          </p>
+          </h4>
         </div>
       </div>
     </div>
@@ -64,9 +63,9 @@
       <img class="award" src="../assets/award-solid.svg" alt="award" />
       <div class>
         <h2>Sign up for BluBoard today</h2>
-        <p>
+        <h4>
           From budgets and bills plus more, you'll discover the effortless way to stay on top of it all.
-        </p>
+        </h4>
       </div>
     </div>
 

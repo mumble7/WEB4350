@@ -12,7 +12,7 @@
           You can aee all of your finances at a glance. You’ll know what’s due,
           when it’s due and what you can pay.
         </h2>
-        <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+        <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
       </div>
     </div>
 

@@ -11,7 +11,7 @@
           any transaction as you please. You can even add your own and have
           BluBoard apply them to the same future changes.
         </h2>
-        <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+        <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
       </div>
     </div>
 
