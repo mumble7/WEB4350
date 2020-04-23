@@ -6,7 +6,7 @@
 
     <!-- Hero -->
     <div class="jumbotron jumbotron-fluid hero">
-       <img class="heroimg" src="../assets/piggybank.jpg" alt />
+      <img class="heroImg" src="../assets/piggybank.jpg" alt />
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -23,38 +23,34 @@
       <div class="card-deck">
         <div class="card">
           <div class="card-body">
+            <h3 class="card-title">All-in-one finances</h3>
+            
             <img
-              class="card-img-top info"
+              class="card-img-top"
               src="../assets/tasks-solid.svg"
               alt="Card image cap"
             />
-            <br>
-            <h5 class="card-title"><strong>All-in-one finances</strong></h5>
-            <br> 
-            
           </div>
         </div>
         <div class="card">
           <div class="card-body">
+            <h3 class="card-title">Budgets Made Simple</h3>
             <img
-              class="card-img-top info"
+              class="card-img-top"
               src="../assets/hand-holding-usd-solid.svg"
               alt="Card image cap"
             />
-            <br>
-            <h5 class="card-title"><strong>Budgets Made Simple</strong></h5>
           </div>
         </div>
 
         <div class="card">
           <div class="card-body">
-             <img
-              class="card-img-top info"
+            <h3 class="card-title">100% Visability</h3>
+            <img
+              class="card-img-top"
               src="../assets/glasses-solid.svg"
               alt="Card image cap"
             />
-            <br>
-            <h5 class="card-title"><strong>100% Visability</strong></h5>
           </div>
         </div>
       </div>
@@ -68,8 +64,8 @@
         <div class="col">
           <h2>All your money in one place</h2>
           <p>
-            We bring together all of your accounts, bills and more, so you can conveniently manage your finances from one dashbaord.
-            <br> 
+            We bring together all of your accounts, bills and more, so you can conveniently manage your finances from one dashbaord. 
+         <br>
           > See all of your bills and money at a glance.
           <br>
           > Create budgets easily with tips tailered to you.
@@ -115,7 +111,9 @@
         <div class="button_cont" align="center"><a class="button" href="signup.vue" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
       </div>
     </div>
-
+<br>
+<br>
+<br>
     <!-- CONTENT END -->
 
      <!--footer-->
@@ -151,7 +149,6 @@
 <script>
 // @ is an alias to /src
 import HomePage from "@/components/HomePage.vue";
-
 export default {
   name: "Home",
   components: {
@@ -165,41 +162,25 @@ export default {
   max-width: 5rem;
   max-height: 5rem;
 }
-
 .hero {
   background-color: lightblue;
 }
 .heroImg {
   max-width: 100%;
 }
-
 .signUp {
   background-color: darkblue;
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 100%;
- 
-
+  color: white;
 }
-
 .heroImg {
   max-width: 100%;
 }
-
 .col{
   padding-top: 15px;
 }
-
-.info{
-  size: 1em;
-  color: darkblue;
-}
-
-h5 .card-title{
-  font-size: 36px;
-  
-}
-
 .site-footer
 {
   background-color:#737373;
