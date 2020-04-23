@@ -57,6 +57,8 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
     <!-- Expenditures Example -->
     <div class="container-fluid grey">
       <div class="row">
@@ -79,6 +81,8 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
     <!-- Details Example -->
     <div class="container-fluid">
       <div class="row">
