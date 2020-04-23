@@ -6,7 +6,7 @@
   <div id="app">
     <div id="nav">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <router-link class="nav-link" to="/">MoneyApp</router-link>
+        <router-link class="nav-link" to="/home">BluBoard</router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,78 +22,47 @@
           <ul class="navbar-nav mr-auto"></ul>
           <span class>
             <ul class="navbar-nav">
-              <div v-if="currentUser.name" class="row">
+               <li class="nav-item">
+                <router-link class="nav-link" to="/about"
+                  >About</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/expenditures"
+                  >Expenditures</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/transactions"
+                  >Transactions</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/analytics"
+                  >Analytics</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/contact"
+                  >Contact</router-link
+                >
+              </li>
+              <div v-if="currentUser.name">
                 {{ currentUser.name }}
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/dashboard"
-                    >Dashboard</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/MemberAnalytics"
-                    >Analytics</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/MemberDeposit"
-                    >Deposits</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/MemberWithdrawl"
-                    >Withdraws</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/MemberTransactions"
-                    >Transactions</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/MemberExpenditures"
-                    >Expenditures</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/dashboard"
-                    >Profile</router-link
-                  >
-                </li>
                 <button @click="logoutUser">Logout</button>
               </div>
-
-              <div v-else class="row">
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/expenditures"
-                    >Expenditures</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/transactions"
-                    >Transactions</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/analytics"
-                    >Analytics</router-link
-                  >
-                </li>
-                <li class="nav-item">
-                  <router-link class="nav-link" to="/contact"
-                    >Contact</router-link
-                  >
-                </li>
+              <div v-else>
                 <li class="nav-item" to="/signin">
                   <router-link class="nav-link" to="/signin"
                     >Sign In</router-link
                   >
                 </li>
                 <li class="nav-item">
-                  <!-- <button type="button" class="btn btn-light"> -->
-                  <router-link class="nav-link" to="/signup"
-                    >Sign Up</router-link
-                  >
-                  <!-- </button> -->
+                  <button type="button" class="btn btn-light">
+                    <router-link class="nav-link" to="/signup"
+                      >Sign Up</router-link
+                    >
+                  </button>
                 </li>
               </div>
             </ul>
@@ -150,13 +119,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
+}
+
+#nav{
+  background-color: lightblue;
+  color: black;
 }
 
 main {
   margin: 0 auto;
   padding: 30px;
-  background-color: white;
+  background-color: lightblue;
   width: 1024px;
   min-height: 300px;
 }
