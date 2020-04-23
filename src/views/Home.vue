@@ -58,7 +58,7 @@
       </div>
     </div>
     <!-- Expenditures Example -->
-    <div class="container-fluid">
+    <div class="container-fluid grey">
       <div class="row">
         <div class="col">
           <img class="heroImg" src="../assets/budgetmadesimple.jpg" alt />
@@ -108,11 +108,11 @@
       <img class="award" src="../assets/award-solid.svg" alt="award" color ="white" />
       <div class>
         <h2>It's All Coming Together</h2>
-        <p>
+        <h4>
           We bring together all of your accounts, bills and more, so you can
           conveniently manage your finances from one dashboard.
-        </p>
-        <div class="button_cont" align="center"><a class="button" to="/signup" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
+        </h4>
+        <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
       </div>
     </div>
 
@@ -185,6 +185,10 @@ export default {
 .col{
   padding-top: 15px;
 }
+.grey{
+  background-color: lightgrey;
+}
+
 .site-footer
 {
   background-color:#737373;
