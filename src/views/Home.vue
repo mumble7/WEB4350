@@ -10,7 +10,7 @@
           <div class="col-4">
             <h1 class="display-4">It's all coming together</h1>
             <p class="display-4"> When you're on top of your money, life is good.</p>
-            <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+            <div class="button_cont" align="center"><a class="herobutton" to="/signin" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
           </div>
           <div class="col-8">
             <img class="heroImg" src="../assets/piggybank.png" alt />
@@ -73,7 +73,7 @@
           <br>
           > Create categories to see exactly where your money goes each month.
           </p>
-          <div class="button_cont" align="center"><a class="button" href="expenditures.vue" target="_blank" rel="nofollow noopener">More Information</a></div>
+          <div class="button_cont" align="center"><a class="button" to="/expenditures" target="_blank" rel="nofollow noopener">More Information</a></div>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
             <br>
             > Get warned when funds are low so you know what you can pay
             </p>
-           <div class="button_cont" align="center"><a class="button" href="transactions.vue" target="_blank" rel="nofollow noopener">Learn More</a></div>
+           <div class="button_cont" align="center"><a class="button" to="/transactions" target="_blank" rel="nofollow noopener">Learn More</a></div>
         </div>
         <div class="col">
           <img class="heroImg" src="../assets/bills.jpg" alt />
@@ -109,7 +109,7 @@
           We bring together all of your accounts, bills and more, so you can
           conveniently manage your finances from one dashboard.
         </p>
-        <div class="button_cont" align="center"><a class="button" href="signup.vue" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
+        <div class="button_cont" align="center"><a class="button" to="/signup" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
       </div>
     </div>
 <br>
@@ -131,11 +131,11 @@
          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="about.vue">About Us</a></li>
-              <li><a href="expenditures.vue">Expenditures</a></li>
-              <li><a href="transactions.vue">Transactions</a></li>
-              <li><a href="Analytics.vue">Analytics</a></li>
-              <li><a href="SignIn.vue">Sign In</a></li>
+              <li><a to="/about">About Us</a></li>
+              <li><a to="/expendiures">Expenditures</a></li>
+              <li><a to="/transactions">Transactions</a></li>
+              <li><a to="/analytics">Analytics</a></li>
+              <li><a to="/signin">Sign In</a></li>
             </ul>
           </div>
         </div>
