@@ -5,16 +5,14 @@
     <!-- CONTENT -->
 
     <!-- Hero -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid hero">
+       <img class="heroimg" src="../assets/piggybank.jpg" alt />
       <div class="container">
         <div class="row">
           <div class="col-4">
             <h1 class="display-4">It's all coming together</h1>
             <p class="display-4"> When you're on top of your money, life is good.</p>
             <div class="button_cont" align="center"><a class="herobutton" href="signup.vue" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
-          </div>
-          <div class="col-8">
-            <img class="heroImg" src="../assets/piggybank.jpg" alt />
           </div>
         </div>
       </div>
@@ -180,7 +178,7 @@ export default {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 100%;
-  color: white;
+ 
 
 }
 
