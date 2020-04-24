@@ -23,26 +23,28 @@
         </div>
         <div class="col">
           <h2>Simple to use, easy to understand</h2>
-          <p>
+          <h4>
             BluBoard uses budget categories to help you track your spending. Use
             deafult spending categories, or rename and recategorize expense
             categories to suit your needs. With BluBoards categorization
             features, it’s easy to see spending totals across all of your
             accounts.
-          </p>
+          </h4>
         </div>
       </div>
     </div>
+    <br>
+<br>
     <!-- Details Example -->
     <div class="container-fluid">
       <div class="row">
         <div class="col">
           <h2>See all the details</h2>
-          <p>
+          <h4>
             Selecting the ‘More Details’ link on each expenditure, you can see
             when and where you made purchases. You can also see how much money
             you have left to spend.
-          </p>
+          </h4>
         </div>
         <div class="col">
           <img class="heroImg" src="../assets/uptodate.jpg" alt />
@@ -50,7 +52,8 @@
       </div>
     </div>
     <!-- CONTENT END -->
-
+<br>
+<br>
     <!--footer-->
      
     <footer class="site-footer">

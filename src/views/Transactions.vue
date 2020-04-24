@@ -37,7 +37,8 @@
     </div>
 
     <!-- CONTENT END -->
-
+<br>
+<br>
     <!--footer-->
      
     <footer class="site-footer">

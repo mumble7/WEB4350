@@ -57,7 +57,8 @@
       </div>
     </div>
     <!-- CONTENT END -->
-
+<br>
+<br>
 <div class="container signUp">
       <img class="award" src="../assets/award-solid.svg" alt="award" />
       <div class>
