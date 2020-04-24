@@ -22,14 +22,16 @@
         <div class="col">
           <img class="heroImg" src="../assets/simple.jpg" alt />
         </div>
+        <br>
+        <br>
         <div class="col">
           <h2>Bill Tracking Made effortless</h2>
-          <p>
+          <h4>
             Finally there is one organized place for your bills. Track all you
             bills on the go - from credit cards and utility bills, to rent
             payments and the babysitter. It’s all in once place and easy to
             manage.
-          </p>
+          </h4>
         </div>
       </div>
     </div>
