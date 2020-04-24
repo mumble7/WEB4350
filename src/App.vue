@@ -53,9 +53,11 @@
               </div>
               <div v-else>
                 <li class="nav-item" to="/signin">
+                <button type="button" class="btn btn-light">
                   <router-link class="nav-link" to="/signin"
                     >Sign In</router-link
                   >
+                </button>
                 </li>
                 <li class="nav-item">
                   <button type="button" class="btn btn-light">
