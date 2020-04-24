@@ -12,7 +12,7 @@
           You can aee all of your finances at a glance. You’ll know what’s due,
           when it’s due and what you can pay.
         </h2>
-        <div class="button_cont" align="center"><router-link align = "center" class="nav-link button" to="/signup">Sign Up for Free</router-link></div>
+        <div class="button_cont" align="center"><router-link align = "center" class="nav-link herobutton" to="/signup">Sign Up for Free</router-link></div>
       </div>
     </div>
 

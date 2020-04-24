@@ -2,18 +2,17 @@
 <template>
   <div class="about">
      <!-- Hero -->
+     <!-- Hero -->
     <div class="jumbotron jumbotron-fluid hero">
       <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <h1 align="center">What is BluBoard, and how does it work?</h1>
-            <div class="button_cont" align="center"><router-link align = "center" class="nav-link herobutton" to="/signup">Sign Up</router-link></div>
-          </div>
-        </div>
+        <h1 class="display-4">
+          What is BluBoard, and how does it work?
+        </h1>
+        <div class="button_cont" align="center"><router-link align = "center" class="nav-link herobutton" to="/signup">Sign Up for Free</router-link></div>
       </div>
     </div>
 
- <!-- see everything in one place -->
+    <!-- see everything in one place -->
     <div class="container-fluid grey">
       <div class="row">
         <div class="col">
