@@ -77,7 +77,7 @@
           <br>
           > Create categories to see exactly where your money goes each month.
           </p>
-          <div class="button_cont" align="center"><a class="button" to="/expenditures" target="_blank" rel="nofollow noopener">More Information</a></div>
+          <div class="button_cont" align="center"><router-link align = "center" class="nav-link button" to="/about">About</router-link></div>
         </div>
       </div>
     </div>
