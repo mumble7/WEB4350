@@ -54,11 +54,11 @@
          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="about.vue">About Us</a></li>
-              <li><a href="expenditures.vue">Expenditures</a></li>
-              <li><a href="transactions.vue">Transactions</a></li>
-              <li><a href="Analytics.vue">Analytics</a></li>
-              <li><a href="SignIn.vue">Sign In</a></li>
+              <li><router-link align = "center" class="nav-link" to="/about">About</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/expenditures">Expenditures</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/transactions">Transactions</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/analytics">Analytics</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/signin">Sign In</router-link></li>
             </ul>
           </div>
         </div>
@@ -113,11 +113,11 @@
 {
   display:block
 }
-.footer-links a
+.site-footer .nav-link
 {
   color:white;
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+.site-footer .nav-link:hover
 {
   color:#3366cc;
   text-decoration:none;

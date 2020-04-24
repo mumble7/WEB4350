@@ -12,7 +12,7 @@
           You can aee all of your finances at a glance. You’ll know what’s due,
           when it’s due and what you can pay.
         </h2>
-        <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+        <div class="button_cont" align="center"><router-link align = "center" class="nav-link button" to="/signup">Sign Up for Free</router-link></div>
       </div>
     </div>
 
@@ -51,11 +51,11 @@
          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="about.vue">About Us</a></li>
-              <li><a href="expenditures.vue">Expenditures</a></li>
-              <li><a href="transactions.vue">Transactions</a></li>
-              <li><a href="Analytics.vue">Analytics</a></li>
-              <li><a href="SignIn.vue">Sign In</a></li>
+              <li><router-link align = "center" class="nav-link" to="/about">About</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/expenditures">Expenditures</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/transactions">Transactions</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/analytics">Analytics</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/signin">Sign In</router-link></li>
             </ul>
           </div>
         </div>
@@ -101,11 +101,11 @@
   margin-top:5px;
   letter-spacing:2px
 }
-.site-footer a
+.site-footer .nav-link
 {
   color:white;
 }
-.site-footer a:hover
+.site-footer .nav-link:hover
 {
   color:#3366cc;
   text-decoration:none;

@@ -141,10 +141,10 @@
             <h6>Quick Links</h6>
             <ul class="footer-links">
               <li><router-link align = "center" class="nav-link" to="/about">About</router-link></li>
-              <li><a to="/expendiures">Expenditures</a></li>
-              <li><a to="/transactions">Transactions</a></li>
-              <li><a to="/analytics">Analytics</a></li>
-              <li><a to="/signin">Sign In</a></li>
+              <li><router-link align = "center" class="nav-link" to="/expenditures">Expenditures</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/transactions">Transactions</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/analytics">Analytics</router-link></li>
+              <li><router-link align = "center" class="nav-link" to="/signin">Sign In</router-link></li>
             </ul>
           </div>
         </div>
