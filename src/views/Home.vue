@@ -11,7 +11,7 @@
             <h1 class="display-8">It's all coming together</h1>
             <h3> When you're on top of your money, life is good.</h3>
             <br>
-            <div class="button_cont" align="center"><a class="herobutton" to="/signin" target="_blank" rel="nofollow noopener">Sign up for free</a></div>
+            <div class="button_cont" align="center"><router-link align = "center" class="nav-link herobutton" to="/signup">Sign Up for Free</router-link></div>
           </div>
           <div class="col-4">
             <img class="heroImg" src="../assets/piggybank.png" alt />
@@ -77,7 +77,7 @@
           <br>
           > Create categories to see exactly where your money goes each month.
           </p>
-          <div class="button_cont" align="center"><router-link align = "center" class="nav-link button" to="/about">About</router-link></div>
+          <div class="button_cont" align="center"><router-link align = "center" class="nav-link button" to="/expenditures">More Information</router-link></div>
         </div>
       </div>
     </div>
@@ -94,11 +94,13 @@
             <p>
             > Receive reminders for upcoming bills so you can plan ahead
             <br>
+            <br>
             > Never miss a payment with alerts when bills are default
             <br>
+             <br>
             > Get warned when funds are low so you know what you can pay
             </p>
-           <div class="button_cont" align="center"><a class="button" to="/transactions" target="_blank" rel="nofollow noopener">Learn More</a></div>
+           <div class="button_cont" align="center"><router-link align = "center" class="nav-link button" to="/transactions">Learn More</router-link></div>
         </div>
         <div class="col">
           <img class="heroImg" src="../assets/bills.jpg" alt />
@@ -116,7 +118,7 @@
           We bring together all of your accounts, bills and more, so you can
           conveniently manage your finances from one dashboard.
         </h4>
-        <div class="button_cont" align="center"><a class="herobutton" to="/signup" target="_blank" rel="nofollow noopener">Get Started Now!</a></div>
+        <div class="button_cont" align="center"><router-link align = "center" class="nav-link herobutton" to="/signup">Get Started Now!</router-link></div>
       </div>
     </div>
 
@@ -138,7 +140,7 @@
          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a to="/about">About Us</a></li>
+              <li><router-link align = "center" class="nav-link" to="/about">About</router-link></li>
               <li><a to="/expendiures">Expenditures</a></li>
               <li><a to="/transactions">Transactions</a></li>
               <li><a to="/analytics">Analytics</a></li>
@@ -218,11 +220,11 @@ export default {
   margin-top:5px;
   letter-spacing:2px
 }
-.site-footer a
+.site-footer .nav-link
 {
   color:white;
 }
-.site-footer a:hover
+.site-footer .nav-link:hover
 {
   color:#3366cc;
   text-decoration:none;
